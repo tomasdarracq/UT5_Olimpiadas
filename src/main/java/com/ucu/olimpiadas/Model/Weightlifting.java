@@ -23,7 +23,7 @@ public class Weightlifting implements IDiscipline{
     public Participant getAthlete() {
         return participant;
     }
-    public int calculatePoints() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public double calculatePoints() {
+        return snatch_weight + clean_and_jerk_weight;
     }
 }

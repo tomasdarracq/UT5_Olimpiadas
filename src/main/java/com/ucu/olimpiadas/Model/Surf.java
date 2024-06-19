@@ -32,7 +32,7 @@ private String name;
         return athlete;
     }
 
-    public int calculatePoints() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public double calculatePoints() {
+        return (dificulty + progretion + combination + style) / 4;
     }
 }

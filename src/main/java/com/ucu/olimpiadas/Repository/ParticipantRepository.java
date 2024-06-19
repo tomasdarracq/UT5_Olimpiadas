@@ -1,6 +1,5 @@
 package com.ucu.olimpiadas.Repository;
-
-import com.ucu.olimpiadas.Model.*;
+import com.ucu.olimpiadas.Model.Participant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +12,7 @@ public class ParticipantRepository {
         participants = new ArrayList<>();
     }
 
-    public static synchronized ParticipantRepository getInstance() {
+    public static ParticipantRepository getInstance() {
         if (instance == null) {
             instance = new ParticipantRepository();
         }

@@ -26,8 +26,7 @@ public class Swimming implements IDiscipline{
     }
 
     @Override
-    public int calculatePoints() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public double calculatePoints() {
+        return time;
     }
-
 }

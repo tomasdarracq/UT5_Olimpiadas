@@ -2,12 +2,12 @@ package com.ucu.olimpiadas.Model;
 
 public class Weightlifting implements IDiscipline{
     private String name;
-    private String category;
+    private WeightliftingCategory category;
     private Participant participant;
     private double snatch_weight;
     private double clean_and_jerk_weight;
 
-    public Weightlifting(String name, String category, double snatch_weight, double clean_and_jerk_weight) {
+    public Weightlifting(String name, WeightliftingCategory category, double snatch_weight, double clean_and_jerk_weight) {
         this.name = name;
         this.category = category;
         this.snatch_weight = snatch_weight;
@@ -16,7 +16,7 @@ public class Weightlifting implements IDiscipline{
     public String getName() {
         return name;
     }
-    public String getCategory() {
+    public WeightliftingCategory getCategory() {
         return category;
     }
     public Participant getAthlete() {

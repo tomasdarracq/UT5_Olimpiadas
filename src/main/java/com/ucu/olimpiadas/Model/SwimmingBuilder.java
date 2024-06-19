@@ -2,7 +2,7 @@ package com.ucu.olimpiadas.Model;
 
 public class SwimmingBuilder implements DisciplineBuilder{
     private String name;
-    private String category;
+    private SwimmingCategory category;
     private Participant athlete;
     private double time;
 
@@ -11,9 +11,7 @@ public class SwimmingBuilder implements DisciplineBuilder{
         this.name = name;
         return this;
     }
-
-    @Override
-    public SwimmingBuilder setCategory(String category){
+    public SwimmingBuilder setCategory(SwimmingCategory category){
         this.category = category;
         return this;
     }

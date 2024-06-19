@@ -3,8 +3,8 @@ package com.ucu.olimpiadas.Model;
 public class WeightliftingBuilder implements DisciplineBuilder {
     private String name;
     private String category;
-    private int snatch_weight;
-    private int clean_and_jerk_weight;
+    private double snatch_weight;
+    private double clean_and_jerk_weight;
 
     @Override
     public WeightliftingBuilder setName(String name) {
@@ -18,12 +18,12 @@ public class WeightliftingBuilder implements DisciplineBuilder {
         return this;
     }
 
-    public WeightliftingBuilder setSnatchWeight(int snatch_weight) {
+    public WeightliftingBuilder setSnatchWeight(double snatch_weight) {
         this.snatch_weight = snatch_weight;
         return this;
     }
 
-    public WeightliftingBuilder setCleanAndJerkWeight(int clean_and_jerk_weight) {
+    public WeightliftingBuilder setCleanAndJerkWeight(double clean_and_jerk_weight) {
         this.clean_and_jerk_weight = clean_and_jerk_weight;
         return this;
     }

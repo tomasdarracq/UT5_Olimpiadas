@@ -1,5 +1,6 @@
 package com.ucu.olimpiadas.Controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/points")
 public class PointsController {
 
-    @RequestMapping("/calculate")
+    @PostMapping("/calculate")
     public void calculatePoints() {
 
     }

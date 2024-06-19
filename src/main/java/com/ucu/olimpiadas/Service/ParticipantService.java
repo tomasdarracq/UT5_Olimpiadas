@@ -1,4 +1,4 @@
-package com.ucu.olimpiadas.Services;
+package com.ucu.olimpiadas.Service;
 
 import com.ucu.olimpiadas.Dto.ParticipantDtos;
 import com.ucu.olimpiadas.Model.Participant;

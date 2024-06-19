@@ -23,6 +23,7 @@ private String name;
         return name;
     }
 
+    @Override
     public SurfCategory getCategory() {
         return category;
     }

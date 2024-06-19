@@ -11,6 +11,13 @@ public class SwimmingBuilder implements DisciplineBuilder{
         this.name = name;
         return this;
     }
+
+    @Override
+    public DisciplineBuilder setCategory(ICategory category) {
+        this.category = (SwimmingCategory) category;
+        return this;
+    }
+
     public SwimmingBuilder setCategory(SwimmingCategory category){
         this.category = category;
         return this;

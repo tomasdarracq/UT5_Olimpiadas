@@ -16,6 +16,7 @@ public class Weightlifting implements IDiscipline{
     public String getName() {
         return name;
     }
+    @Override
     public WeightliftingCategory getCategory() {
         return category;
     }

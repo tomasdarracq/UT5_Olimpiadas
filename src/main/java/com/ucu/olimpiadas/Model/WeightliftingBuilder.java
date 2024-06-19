@@ -13,6 +13,12 @@ public class WeightliftingBuilder implements DisciplineBuilder {
         return this;
     }
 
+    @Override
+    public DisciplineBuilder setCategory(ICategory category) {
+        this.category = (WeightliftingCategory) category;
+        return this;
+    }
+
     public WeightliftingBuilder setCategory(WeightliftingCategory category) {
         this.category = category;
         return this;

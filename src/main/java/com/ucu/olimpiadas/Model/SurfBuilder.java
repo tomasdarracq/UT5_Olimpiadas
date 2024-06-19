@@ -16,8 +16,13 @@ public class SurfBuilder implements DisciplineBuilder{
         return this;
     }
 
-    public DisciplineBuilder setCategory(SurfCategory category) {
-        this.category = category;
+    public SurfCategory getCategory(ICategory category) {
+        return this.category;
+    }
+
+    @Override
+    public DisciplineBuilder setCategory(ICategory category) {
+        this.category = (SurfCategory) category;
         return this;
     }
 

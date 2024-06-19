@@ -16,7 +16,7 @@ public class Swimming implements IDiscipline{
     public String getName(){
         return name;
     }
-
+    @Override
     public SwimmingCategory getCategory(){
         return category;
     }

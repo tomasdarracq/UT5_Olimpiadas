@@ -3,6 +3,7 @@ package com.ucu.olimpiadas.Model;
 public class Weightlifting implements IDiscipline{
     private String name;
     private String category;
+    private Participant participant;
     private double snatch_weight;
     private double clean_and_jerk_weight;
 
@@ -17,6 +18,9 @@ public class Weightlifting implements IDiscipline{
     }
     public String getCategory() {
         return category;
+    }
+    public Participant getAthlete() {
+        return participant;
     }
     public int calculatePoints() {
         throw new UnsupportedOperationException("Not supported yet.");

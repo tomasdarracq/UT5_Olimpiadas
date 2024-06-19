@@ -3,6 +3,7 @@ package com.ucu.olimpiadas.Model;
 public class SurfBuilder implements DisciplineBuilder{
     private String name;
     private String category;
+    private Participant athlete;
     private double dificulty;
     private double progretion;
     private double combination;
@@ -18,6 +19,12 @@ public class SurfBuilder implements DisciplineBuilder{
     @Override
     public DisciplineBuilder setCategory(String category) {
         this.category = category;
+        return this;
+    }
+
+    @Override
+    public DisciplineBuilder setAthlete(Participant athlete) {
+        this.athlete = athlete;
         return this;
     }
 
@@ -43,6 +50,6 @@ public class SurfBuilder implements DisciplineBuilder{
 
     @Override
     public Surf build() {
-        return new Surf(name, category, dificulty, progretion, combination, style);
+        return new Surf(name, category, athlete, dificulty, progretion, combination, style);
     }
 }

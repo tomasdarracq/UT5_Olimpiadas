@@ -7,10 +7,12 @@ Casos de Uso:
 Disciplina
 - agregar una disciplina
 - obtener todas las disciplinas
+  
 Jueces
 - Obtener todos los jueces
 - obtener un juez segun su id
 - agregar un juez nuevo
+  
 Participantes
 - Obtener participante por su ci
 - actualizar datosde participante

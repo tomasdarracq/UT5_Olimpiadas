@@ -4,7 +4,6 @@ public class Participant implements IPerson {
     private String name;
     private String address;
     private int ci;
-    private IDiscipline discipline;
 
     public Participant(String name, String address, int ci) {
         this.name = name;
@@ -40,13 +39,5 @@ public class Participant implements IPerson {
     @Override
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    public IDiscipline getDiscipline() {
-        return discipline;
-    }
-
-    public void setDiscipline(IDiscipline discipline) {
-        this.discipline = discipline;
     }
 }

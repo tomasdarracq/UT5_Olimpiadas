@@ -2,7 +2,7 @@ package com.ucu.olimpiadas.Model;
 
 public class WeightliftingBuilder implements DisciplineBuilder {
     private String name;
-    private String category;
+    private WeightliftingCategory category;
     private Participant athlete;
     private double snatch_weight;
     private double clean_and_jerk_weight;
@@ -14,7 +14,12 @@ public class WeightliftingBuilder implements DisciplineBuilder {
     }
 
     @Override
-    public WeightliftingBuilder setCategory(String category) {
+    public DisciplineBuilder setCategory(ICategory category) {
+        this.category = (WeightliftingCategory) category;
+        return this;
+    }
+
+    public WeightliftingBuilder setCategory(WeightliftingCategory category) {
         this.category = category;
         return this;
     }

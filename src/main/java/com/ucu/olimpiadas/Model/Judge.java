@@ -2,16 +2,14 @@ package com.ucu.olimpiadas.Model;
 
 public class Judge implements IPerson {
     private String name;
-    private String id;
     private String password;
     private String address;
-    private String cedula;
+    private int ci;
 
-    public Judge(String name, String id, String address, String cedula) {
+    public Judge(String name, String address, int ci) {
         this.name = name;
-        this.id = id;
         this.address = address;
-        this.cedula = cedula;
+        this.ci = ci;
     }
 
     @Override
@@ -25,13 +23,13 @@ public class Judge implements IPerson {
     }
 
     @Override
-    public String getCedula() {
-        return cedula;
+    public int getCI() {
+        return ci;
     }
 
     @Override
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public void setCI(int ci) {
+        this.ci = ci;
     }
 
     @Override
@@ -44,13 +42,6 @@ public class Judge implements IPerson {
         this.address = address;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getPassword() {
         return password;

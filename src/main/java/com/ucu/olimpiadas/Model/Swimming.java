@@ -24,6 +24,7 @@ public class Swimming implements IDiscipline{
     public Participant getAthlete(){
         return athlete;
     }
+
     @Override
     public int calculatePoints() {
         throw new UnsupportedOperationException("Not supported yet.");

@@ -3,13 +3,13 @@ package com.ucu.olimpiadas.Model;
 public class Participant implements IPerson {
     private String name;
     private String address;
-    private String cedula;
+    private int ci;
     private IDiscipline discipline;
 
-    public Participant(String name, String address, String cedula) {
+    public Participant(String name, String address, int ci) {
         this.name = name;
         this.address = address;
-        this.cedula = cedula;
+        this.ci = ci;
     }
 
     @Override
@@ -23,13 +23,13 @@ public class Participant implements IPerson {
     }
 
     @Override
-    public String getCedula() {
-        return cedula;
+    public int getCI() {
+        return ci;
     }
 
     @Override
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public void setCI(int ci) {
+        this.ci = ci;
     }
 
     @Override

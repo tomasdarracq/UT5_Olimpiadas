@@ -19,5 +19,6 @@ Participantes
 - añadir un participante
 - obtener todos los participantes
 
- 
+ ![image](https://github.com/tomasdarracq/UT5_Olimpiadas/assets/110825915/7ed563b4-a6d7-447a-b644-b7cda3e8fe4a)
+
 

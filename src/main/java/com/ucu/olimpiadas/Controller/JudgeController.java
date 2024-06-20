@@ -1,6 +1,6 @@
 package com.ucu.olimpiadas.Controller;
 
-import com.ucu.olimpiadas.Model.Judge;
+import com.ucu.olimpiadas.Model.Person.Judge;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 

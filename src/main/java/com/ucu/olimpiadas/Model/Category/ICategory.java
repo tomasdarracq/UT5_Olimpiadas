@@ -1,4 +1,4 @@
-package com.ucu.olimpiadas.Model;
+package com.ucu.olimpiadas.Model.Category;
 
 public interface ICategory {
      public String getName();

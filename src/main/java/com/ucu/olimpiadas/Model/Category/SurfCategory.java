@@ -1,6 +1,6 @@
-package com.ucu.olimpiadas.Model;
+package com.ucu.olimpiadas.Model.Category;
 
-public class SurfCategory implements ICategory{
+public class SurfCategory implements ICategory {
     private String name;
     private String gender;
     public SurfCategory(String name, String gender) {

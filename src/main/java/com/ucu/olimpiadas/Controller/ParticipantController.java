@@ -1,7 +1,7 @@
 package com.ucu.olimpiadas.Controller;
 
 import com.ucu.olimpiadas.Dto.ParticipantDtos;
-import com.ucu.olimpiadas.Model.Participant;
+import com.ucu.olimpiadas.Model.Person.Participant;
 
 import com.ucu.olimpiadas.Service.ParticipantService;
 import org.springframework.http.ResponseEntity;

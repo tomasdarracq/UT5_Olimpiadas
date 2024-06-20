@@ -1,8 +1,7 @@
 package com.ucu.olimpiadas.Repository;
-import com.ucu.olimpiadas.Model.Participant;
+import com.ucu.olimpiadas.Model.Person.Participant;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.zip.Checksum;
 
 public class ParticipantRepository {
 

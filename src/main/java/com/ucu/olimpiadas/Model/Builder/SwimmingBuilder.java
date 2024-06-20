@@ -1,9 +1,13 @@
-package com.ucu.olimpiadas.Model;
+package com.ucu.olimpiadas.Model.Builder;
 
-public class SwimmingBuilder implements DisciplineBuilder{
+import com.ucu.olimpiadas.Model.Discipline.Swimming;
+import com.ucu.olimpiadas.Model.Category.ICategory;
+import com.ucu.olimpiadas.Model.Category.SwimmingCategory;
+
+public class SwimmingBuilder implements DisciplineBuilder {
     private String name;
     private SwimmingCategory category;
-    private Participant athlete;
+    private int athlete;
     private double time;
 
     @Override
@@ -24,7 +28,7 @@ public class SwimmingBuilder implements DisciplineBuilder{
     }
 
     @Override
-    public SwimmingBuilder setAthlete(Participant athlete){
+    public SwimmingBuilder setAthlete(int athlete){
         this.athlete = athlete;
         return this;
     }

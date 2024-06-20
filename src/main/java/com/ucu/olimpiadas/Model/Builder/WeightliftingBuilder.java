@@ -1,9 +1,13 @@
-package com.ucu.olimpiadas.Model;
+package com.ucu.olimpiadas.Model.Builder;
+
+import com.ucu.olimpiadas.Model.Discipline.Weightlifting;
+import com.ucu.olimpiadas.Model.Category.ICategory;
+import com.ucu.olimpiadas.Model.Category.WeightliftingCategory;
 
 public class WeightliftingBuilder implements DisciplineBuilder {
     private String name;
     private WeightliftingCategory category;
-    private Participant athlete;
+    private int athlete;
     private double snatch_weight;
     private double clean_and_jerk_weight;
 
@@ -19,13 +23,8 @@ public class WeightliftingBuilder implements DisciplineBuilder {
         return this;
     }
 
-    public WeightliftingBuilder setCategory(WeightliftingCategory category) {
-        this.category = category;
-        return this;
-    }
-
     @Override
-    public WeightliftingBuilder setAthlete(Participant athlete) {
+    public WeightliftingBuilder setAthlete(int athlete) {
         this.athlete = athlete;
         return this;
     }
@@ -42,6 +41,6 @@ public class WeightliftingBuilder implements DisciplineBuilder {
 
     @Override
     public Weightlifting build() {
-        return new Weightlifting(name, category, snatch_weight, clean_and_jerk_weight);
+        return new Weightlifting(name, category, athlete, snatch_weight, clean_and_jerk_weight);
     }
 }

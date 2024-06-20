@@ -1,12 +1,14 @@
-package com.ucu.olimpiadas.Model;
+package com.ucu.olimpiadas.Model.Discipline;
 
-public class Swimming implements IDiscipline{
+import com.ucu.olimpiadas.Model.Category.SwimmingCategory;
+
+public class Swimming implements IDiscipline {
     private String name;
     private SwimmingCategory category;
-    private Participant athlete;
+    private int athlete;
     private double time;
 
-    public Swimming(String name, SwimmingCategory category, Participant athlete, double time){
+    public Swimming(String name, SwimmingCategory category, int athlete, double time){
         this.name = name;
         this.category = category;
         this.athlete = athlete;
@@ -21,7 +23,7 @@ public class Swimming implements IDiscipline{
         return category;
     }
 
-    public Participant getAthlete(){
+    public int getAthlete(){
         return athlete;
     }
 

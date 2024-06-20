@@ -1,7 +1,7 @@
 package com.ucu.olimpiadas.Service;
 
 import com.ucu.olimpiadas.Dto.ParticipantDtos;
-import com.ucu.olimpiadas.Model.Participant;
+import com.ucu.olimpiadas.Model.Person.Participant;
 import com.ucu.olimpiadas.Repository.ParticipantRepository;
 
 import java.util.List;

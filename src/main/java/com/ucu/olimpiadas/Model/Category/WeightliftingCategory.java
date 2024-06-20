@@ -1,14 +1,14 @@
-package com.ucu.olimpiadas.Model;
+package com.ucu.olimpiadas.Model.Category;
 
-public class SwimmingCategory implements ICategory{
+public class WeightliftingCategory implements ICategory {
     private String name;
     private String gender;
-    private String style;
+    private String weight;
 
-    public SwimmingCategory(String name, String gender, String style) {
+    public WeightliftingCategory(String name, String gender, String weight) {
         this.name = name;
         this.gender = gender;
-        this.style = style;
+        this.weight = weight;
     }
 
     public String getName() {
@@ -19,8 +19,8 @@ public class SwimmingCategory implements ICategory{
         return gender;
     }
 
-    public String getStyle() {
-        return style;
+    public String getWeight() {
+        return weight;
     }
 
     public void setName(String name) {
@@ -31,7 +31,7 @@ public class SwimmingCategory implements ICategory{
         this.gender = gender;
     }
 
-    public void setStyle(String style) {
-        this.style = style;
+    public void setWeight(String weight) {
+        this.weight = weight;
     }
 }

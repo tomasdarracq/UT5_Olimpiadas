@@ -1,4 +1,4 @@
-package com.ucu.olimpiadas.Model;
+package com.ucu.olimpiadas.Model.Person;
 
 public class Judge implements IPerson {
     private String name;

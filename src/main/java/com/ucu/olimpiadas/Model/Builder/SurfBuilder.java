@@ -1,9 +1,13 @@
-package com.ucu.olimpiadas.Model;
+package com.ucu.olimpiadas.Model.Builder;
 
-public class SurfBuilder implements DisciplineBuilder{
+import com.ucu.olimpiadas.Model.Discipline.Surf;
+import com.ucu.olimpiadas.Model.Category.ICategory;
+import com.ucu.olimpiadas.Model.Category.SurfCategory;
+
+public class SurfBuilder implements DisciplineBuilder {
     private String name;
     private SurfCategory category;
-    private Participant athlete;
+    private int athlete;
     private double dificulty;
     private double progretion;
     private double combination;
@@ -27,7 +31,7 @@ public class SurfBuilder implements DisciplineBuilder{
     }
 
     @Override
-    public DisciplineBuilder setAthlete(Participant athlete) {
+    public DisciplineBuilder setAthlete(int athlete) {
         this.athlete = athlete;
         return this;
     }

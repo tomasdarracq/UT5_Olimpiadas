@@ -1,15 +1,17 @@
-package com.ucu.olimpiadas.Model;
+package com.ucu.olimpiadas.Model.Discipline;
 
-public class Surf implements IDiscipline{
+import com.ucu.olimpiadas.Model.Category.SurfCategory;
+
+public class Surf implements IDiscipline {
 private String name;
     private SurfCategory category;
-    private Participant athlete;
+    private int athlete;
     private double dificulty;
     private double progretion;
     private double combination;
     private double style;
 
-    public Surf(String name, SurfCategory category, Participant athlete, double dificulty, double progretion, double combination, double style) {
+    public Surf(String name, SurfCategory category, int athlete, double dificulty, double progretion, double combination, double style) {
         this.name = name;
         this.category = category;
         this.athlete = athlete;
@@ -28,7 +30,7 @@ private String name;
         return category;
     }
 
-    public Participant getAthlete() {
+    public int getAthlete() {
         return athlete;
     }
 
